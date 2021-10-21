@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from academics.views import contactForm
+from academics.views import contactForm, contact
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('formularioContacto/', contactForm),
+    path('contactar/', contact),
 ]
